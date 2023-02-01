@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endre bakgrunnsfarge</title>
+</head>
+<body>
+    
+        <div id=mainDiv></div>
+        <button onclick="Farge1()">Farge 1</button>
+        <button onclick="Farge2()">Farge 2</button>
+        <button onclick="Farge3()">Farge 3</button>
+
+        <script>
+            function Farge1() {
+                document.getElementById('mainDiv').innerHTML = /*html*/`
+                <div style="background-color:red; width: 100%; height:1000px;">
+                `;
+            }
+
+            function Farge2() {
+                document.getElementById('mainDiv').innerHTML = /*html*/`
+                <div style="background-color:blue; width: 100%; height:1000px;">
+                `;
+            }
+
+            function Farge3() {
+                document.getElementById('mainDiv').innerHTML = /*html*/`
+                <div style="background-color:black; width: 100%; height:1000px;">
+                `;
+            }
+
+        </script>
+
+</body>
+</html>
