@@ -5,32 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Endre bakgrunnsfarge</title>
+    <style>
+        body{
+            padding:0;
+            margin:0;
+        }
+    </style>
 </head>
 <body>
     
         <div id=mainDiv></div>
-        <button onclick="Farge1()">Farge 1</button>
-        <button onclick="Farge2()">Farge 2</button>
-        <button onclick="Farge3()">Farge 3</button>
+        <button onclick="Farge('red',100,900)">Farge 1</button>
+        <button onclick="Farge('blue',100,900)">Farge 2</button>
+        <button onclick="Farge('black',100,900)">Farge 3</button>
 
         <script>
-            function Farge1() {
+
+            function Farge(color,width,height) {
                 document.getElementById('mainDiv').innerHTML = /*html*/`
-                <div style="background-color:red; width: 100%; height:900px;">
+                    <div style="background-color:${color}; width: ${width}%; height: ${height}px;"></div>
                 `;
             }
 
-            function Farge2() {
-                document.getElementById('mainDiv').innerHTML = /*html*/`
-                <div style="background-color:blue; width: 100%; height:900px;">
-                `;
-            }
+            //function Farge1() {
+            //    document.getElementById('mainDiv').innerHTML = /*html*/`
+            //    <div style="background-color:red; width: 100%; height:900px;"></div>
+            //    `;
+            //}
 
-            function Farge3() {
-                document.getElementById('mainDiv').innerHTML = /*html*/`
-                <div style="background-color:black; width: 100%; height:900px;">
-                `;
-            }
+            //function Farge2() {
+            //    document.getElementById('mainDiv').innerHTML = /*html*/`
+            //    <div style="background-color:blue; width: 100%; height:900px;"></div>
+            //    `;
+            //}
+
+            //function Farge3() {
+            //    document.getElementById('mainDiv').innerHTML = /*html*/`
+            //    <div style="background-color:black; width: 100%; height:900px;"></div>
+            //    `;
+            //}
 
         </script>
 
